@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>midori</Name>
+        <Homepage>http://goodies.xfce.org/projects/applications/midori</Homepage>
+        <Packager>
+        <Name>Alexey Ivanes</Name>
+        <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <Icon>midori</Icon>
+        <IsA>app:gui</IsA>
+	<PartOf>network.web</PartOf>
+        <Summary>A lightweight web browser that is based GTK+</Summary>
+        <Description>Midori is a lightweight GTK+ web browser based on WebkitGtk. It features tabs, windows and session management, bookmarks stored with XBEL, searchbox based on OpenSearch, and user script support.</Description>
+        <Archive sha1sum="b790f33b72520e6910061a933f879b74482f801c" type="tarbz2">http://archive.xfce.org/src/apps/midori/0.3/midori-0.3.6.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>vala-devel</Dependency>
+            <Dependency>libunique-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>webkit-gtk-devel</Dependency>
+            <Dependency>docutils</Dependency>
+            <Dependency>gtk-doc</Dependency>
+	    <Dependency>libXScrnSaver-devel</Dependency>
+	    <Dependency>libidn-devel</Dependency>
+	    <Dependency>libtasn1-devel</Dependency>
+	    <Dependency>libnotify-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>midori</Name>
+        <RuntimeDependencies>
+            <Dependency>vala</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>webkit-gtk</Dependency>
+	    <Dependency>libXScrnSaver</Dependency>
+	    <Dependency>libidn</Dependency>
+	    <Dependency>libtasn1</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/midori</Path>
+            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="data">/usr/share/gir*</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-06-08</Date>
+	    <Version>0.3.6</Version>
+            <Comment>First release.</Comment>
+            <Name>Alexey Ivanes</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

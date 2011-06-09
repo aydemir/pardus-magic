@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>rednotebook</Name>
+        <Homepage>http://rednotebook.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanov@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>rednotebook</Icon>
+        <IsA>app:gui</IsA>
+	<PartOf>office.misc</PartOf>
+        <Summary>Graphical daily journal with calendar, templates and keyword searching</Summary>
+        <Description>RedNotebook is a graphical journal to keep track of notes and thoughts. It includes a calendar navigation, customizable templates, export functionality and word clouds. You can also format, tag and search your entries.</Description>
+        <Archive sha1sum="c7da4bd6701e7959c6fa8791afba0eba724fdf2a" type="targz">mirrors://sourceforge/rednotebook/rednotebook-1.1.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>rednotebook</Name>
+        <RuntimeDependencies>
+            <Dependency>python-PyYAML</Dependency>
+            <Dependency>python-webkit-gtk</Dependency>
+	    <Dependency>python-chardet</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2011-03-29</Date>
+            <Version>1.1.4</Version>
+            <Comment>First release</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanov@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

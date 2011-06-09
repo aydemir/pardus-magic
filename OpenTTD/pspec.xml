@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openttd</Name>
+        <Homepage>http://www.openttd.org/en/</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+	<PartOf>game</PartOf>
+        <Summary>OpenTTD is an open source simulation game based upon the popular Microprose game "Transport Tycoon Deluxe", written by Chris Sawyer.</Summary>
+        <Description>It attempts to mimic the original game as closely as possible while extending it with new features. http://www.openttd.org/en/about</Description>
+	<Archive sha1sum="2d504cf0d1b1a85cf77558aa11c5d42746453865" type="targz">http://binaries.openttd.org/releases/1.1.0/openttd-1.1.0-source.tar.gz</Archive>
+        <BuildDependencies>
+	  <Dependency>libsdl-devel</Dependency>
+	  <Dependency>zlib-devel</Dependency>
+	  <Dependency>libpng-devel</Dependency>
+	  <Dependency>freetype-devel</Dependency>
+	  <Dependency>fontconfig-devel</Dependency>
+	  <Dependency>icu4c-devel</Dependency>
+	  <Dependency>lzo-devel</Dependency>
+	  <Dependency>grfcodec</Dependency>
+	</BuildDependencies>
+</Source>
+
+    <Package>
+        <Name>openttd</Name>
+        <RuntimeDependencies>
+	  <Dependency>libsdl</Dependency>
+	  <Dependency>zlib</Dependency>
+	  <Dependency>libpng</Dependency>
+	  <Dependency>freetype</Dependency>
+	  <Dependency>fontconfig</Dependency>
+	  <Dependency>icu4c</Dependency>
+	  <Dependency>lzo</Dependency>
+	  <Dependency>xz</Dependency>
+	  <Dependency>grfcodec</Dependency>
+	  <Dependency release="current">openttd-data</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="binary">/usr/bin</Path>
+	    <Path fileType="data">/usr/share/applications</Path>
+	    <Path fileType="data">/usr/share/pixmaps</Path>
+	    <Path fileType="data">/usr/share/icons</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="doc">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>openttd-data</Name>
+	<Summary>Data resources for OpenTTD game.</Summary>
+        <RuntimeDependencies>
+	    <Dependency>openttd-opensfx</Dependency>
+	    <Dependency>openttd-opengfx</Dependency>
+	    <Dependency>openttd-openmsx</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	     <Path fileType="data">/usr/share/openttd</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-23</Date>
+	    <Version>1.1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

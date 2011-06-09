@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>kamerka</Name>
+        <Homepage>http://www.vacuum-im.org/</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>kamerka</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>multimedia.video</PartOf>
+        <Summary>Take photos using your webcam and shiny animated QML interface</Summary>
+        <Description>Kamerka is an Qt4 app using KDE4 libraries. It uses Video4Linux to get image from
+webcam and is able to save photos. Interface is based on QML and uses it's possibilities
+to show easy to use animated UI.</Description>
+        <Archive sha1sum="7068bd71ee4b9b2ac5dff48bdc034fc1680e9378" type="targz">http://dosowisko.net/kamerka/downloads/kamerka-0.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+	    <Dependency>libv4l-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>kamerka</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>v4l-utils</Dependency>
+	    <Dependency>libv4l</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <!-- <Path fileType="header">/usr/include</Path> -->
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2011-06-07</Date>
+            <Version>0.6</Version>
+            <Comment>First release.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

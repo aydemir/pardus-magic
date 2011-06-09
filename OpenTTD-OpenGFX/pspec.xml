@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openttd-opengfx</Name>
+        <Homepage>http://dev.openttdcoop.org/projects/opengfx</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+	<PartOf>game</PartOf>
+        <Summary>OpenGFX is an open source graphics base set designed to be used by OpenTTD.</Summary>
+        <Description>The OpenGFX project for OpenTTD: a free replacement of the base graphics so that OpenTTD can be shipped finally fully functional without the need for additional downloads.</Description>
+	<Archive sha1sum="ff0c71c4435fdfa1e20d7bd207210a8b9a3ec9fd" type="targz">http://binaries.openttd.org/extra/opengfx/0.3.3/opengfx-0.3.3-source.tar.gz</Archive>
+        <BuildDependencies>
+	  <Dependency>grfcodec</Dependency>
+	</BuildDependencies>
+</Source>
+
+    <Package>
+        <Name>openttd-opengfx</Name>
+        <!-- <RuntimeDependencies>
+	  <Dependency>openttd-data</Dependency>   # <class 'pisi.graph.CycleException'>: Encountered cycle?
+	</RuntimeDependencies> -->
+        <Files>
+	  <Path fileType="data">/usr/share/openttd/data/opengfx</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-23</Date>
+	    <Version>0.3.3</Version>
+            <Comment>First release</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

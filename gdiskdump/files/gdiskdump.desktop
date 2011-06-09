@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Gdiskdump
+Comment=Gdiskdump application
+Comment[de]=Gdiskdump
+Comment[es]=Gdiskdump
+Comment[fr]=Gdiskdump
+Comment[pt_BR]=Gdiskdump
+Categories=GNOME;Utility;
+Exec=xdg-su -c "gdiskdump"
+Icon=/usr/share/gdiskdump/media/gdiskdump.svg
+Terminal=false
+Type=Application

@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /usr/share/redeclipse
+exec bin/reclient -r "$@"
