@@ -10,6 +10,7 @@
         </Packager>
         <License>GPLv3</License>
         <License>CCPL-Attribution-ShareAlike-3.0</License>
+        <PartOf>game</PartOf>
         <Icon>violetland</Icon>
         <IsA>app:gui</IsA>
         <Summary>A game similar to Crimsonland</Summary>
@@ -22,6 +23,8 @@
             <Dependency>sdl-ttf-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
     </Source>
 

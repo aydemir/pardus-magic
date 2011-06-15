@@ -14,7 +14,7 @@
         <PartOf>network.chat</PartOf>
         <Summary>Cross-platform Qt-based jabber client</Summary>
         <Description>Vacuum IM is cross-platform Qt-based application, fast and lightweight jabber instant messaging client that utilises the best in open source technologies.</Description>
-        <Archive sha1sum="62ad32b576bb15e448d9d3489d99355f285b3501" type="targz">http://vacuum-im.googlecode.com/files/vacuum-1.1.0.tar.gz</Archive>
+        <Archive sha1sum="d4543218177600327a098651511e7f96cd52fc16" type="zip">vacuum-im.zip</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>openssl-devel</Dependency>
