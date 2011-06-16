@@ -18,18 +18,8 @@ GeoTiff format as well as Garmin's img vector map format. Additional it is
 the PC side frontend to QLandkarte M, a moving map application for mobile
 devices. And it fills the gap Garmin leaves in refusing to support Linux.
 QLandkarte GT is the proof that writing portable applications for Unix,
-Windows and OSX is feasible with a minimum of overhead. No excuses!
-
-QLandkarte GT does replace the original QLandkarte with a much more
-flexible architecture. It's not limited to a map format or device. Thus
-if you think your Magellan GPS or other should be supported, join the team.
-
-Additionally it is a front end to the GDAL tools, to make georeferencing
-scanned maps feasible for the normal user. Compared to similar tools like
-QGis, it's target users are more on the consumer side than on the scientific
-one. QLandkarte GT might not let you select every possible feature of the
-GDAL tools, but it will simplify their use to the demands of most users.</Description>
-	<Archive sha1sum="a59230fb3d3a6292458367d70ff66468f058835c" type="targz">mirrors://sourceforge/qlandkartegt/qlandkartegt-1.1.2.tar.gz</Archive>
+Windows and OSX is feasible with a minimum of overhead. No excuses!</Description>
+	<Archive sha1sum="31129d1f3cc9ba5003a980d6d341301e298b86b7" type="targz">mirrors://sourceforge/qlandkartegt/qlandkartegt-1.2.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>proj-devel</Dependency>
@@ -55,6 +45,13 @@ GDAL tools, but it will simplify their use to the demands of most users.</Descri
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2011-06-16</Date>
+	    <Version>1.2.0</Version>
+            <Comment>Update.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-24</Date>
 	    <Version>1.1.2</Version>

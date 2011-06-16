@@ -9,7 +9,10 @@ from pisi.actionsapi import get
 def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
-    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release", sourceDir="..")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
+			  -DCMAKE_BUILD_TYPE=Release \
+			  -DCMAKE_CXX_FLAGS_RELEASE:STRING='-DNDEBUG' \
+			  -DCMAKE_C_FLAGS_RELEASE:STRING='-DNDEBUG'", sourceDir="..")
 
 def build():
     shelltools.cd("build")
