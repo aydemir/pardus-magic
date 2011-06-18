@@ -14,7 +14,7 @@
         <PartOf>hardware.optical</PartOf>
         <Summary>Silicon is set of OpenSource tools to manage and organize your optical discs like CDs, DVDs and Blu-rays. </Summary>
         <Description>Silicon target is made optical discs managing easy.</Description>
-        <Archive sha1sum="ba36671cd1ea2dcf537d5010338121e3c81fd561" type="targz">http://getsilicon.org/download/silicon_1.7.2_src.tar.gz</Archive>
+        <Archive sha1sum="ab0208b4947ec3f120f6d3998bf489c3a3f41188" type="targz">http://getsilicon.org/download/silicon_1.7.3_src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
@@ -41,10 +41,17 @@
         </Files>
     </Package>
     <History>
+        <Update release="3">
+            <Date>2011-06-18</Date>
+            <Version>1.7.3</Version>
+            <Comment>Version update.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-05-31</Date>
             <Version>1.7.2</Version>
-            <Comment>First release</Comment>
+            <Comment>Not working</Comment>
             <Name>Alexey Ivanov</Name>
             <Email>alexey.ivanes@gmail.com</Email>
         </Update>
