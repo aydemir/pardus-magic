@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <PartOf>util</PartOf>
         <License>GPLv3</License>
-        <Archive sha1sum="b6ba3e2fa9087b1726d94f8a11cdc8b2a0151a41" type="targz">http://launchpad.net/gdiskdump/trunk/0.7/+download/gdiskdump_0.7.tar.gz</Archive>
+        <Archive sha1sum="6f6f971ad460f90ab628a96fb339c0aa0d609eb7" type="targz">http://launchpad.net/gdiskdump/trunk/0.7.1/+download/gdiskdump_0.7.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
             <Dependency>notify-python</Dependency>
@@ -37,6 +37,14 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2011-06-25</Date>
+            <Version>0.7.1</Version>
+            <Comment> * Initial release.
+                      -- Andreas Wilhelm andreas@Prometheus  Fri, 24 Jun 2011 13:21:40 +0200</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-06-04</Date>
             <Version>0.7</Version>
