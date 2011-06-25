@@ -14,7 +14,7 @@
         <PartOf>office</PartOf>
         <Summary>Kraft helps you to handle your daily offers and invoices in your small business</Summary>
         <Description>Kraft is aimed at the demands of small businesses. It is easy to use and limits on a set of most needed features. So it is the solution for creating offers and invoices. With Kraft running your business is done quicker. You will have more time for things which give more pleasure.</Description>
-        <Archive sha1sum="e0f3b7abad9762c341d99fd8770718c037414a77" type="tarbz2">mirrors://sourceforge/kraft/kraft-0.41.tar.bz2</Archive>
+        <Archive sha1sum="038316727a5cca0f9a6593a489cae4ba91ace73f" type="tarbz2">mirrors://sourceforge/kraft/kraft-0.43.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>libctemplate-devel</Dependency>
@@ -39,6 +39,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="3">
+            <Date>2011-04-21</Date>
+            <Version>0.43</Version>
+            <Comment>Update.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-21</Date>
             <Version>0.41</Version>
