@@ -12,8 +12,11 @@
 	<Icon>vlc-qt</Icon>
         <IsA>library</IsA>
         <PartOf>multimedia.video</PartOf>
-        <Summary>Cross-platform Qt-based jabber client</Summary>
-        <Description>Vacuum IM is cross-platform Qt-based application, fast and lightweight jabber instant messaging client that utilises the best in open source technologies.</Description>
+        <Summary>VLC-Qt is a free library used to connect Qt and libvlc libraries.</Summary>
+        <Description>VLC-Qt is free (libre) software. This means that the library
+source code is available to public, anyone is welcome to research
+how the library works, participate in its development, freely distribute
+the library and spread the word!</Description>
         <Archive sha1sum="96cb5321219a194fbba7a4303cfd75aea515135d" type="targz">https://download.github.com/ntadej-vlc-qt-0.5.1-0-g43a5179.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
