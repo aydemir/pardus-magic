@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>libvlc-qt</Name>
+        <Homepage>http://projects.tano.si/en/vlc-qt</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+	<Icon>vlc-qt</Icon>
+        <IsA>library</IsA>
+        <PartOf>multimedia.video</PartOf>
+        <Summary>Cross-platform Qt-based jabber client</Summary>
+        <Description>Vacuum IM is cross-platform Qt-based application, fast and lightweight jabber instant messaging client that utilises the best in open source technologies.</Description>
+        <Archive sha1sum="96cb5321219a194fbba7a4303cfd75aea515135d" type="targz">https://download.github.com/ntadej-vlc-qt-0.5.1-0-g43a5179.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>vlc-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libvlc-qt</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>vlc-libs</Dependency>
+            <Dependency>vlc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libvlc-qt-devel</Name>
+	<Summary>Development files for libvlc-qt</Summary>
+        <RuntimeDependencies>
+	    <Dependency release="current">libvlc-qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2010-06-27</Date>
+            <Version>0.5.1</Version>
+            <Comment>First release.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
