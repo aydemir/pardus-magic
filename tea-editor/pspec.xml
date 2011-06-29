@@ -39,7 +39,7 @@
     </Package>
     <History>
         <Update release="3">
-            <Date>2011-05-24</Date>
+            <Date>2011-06-30</Date>
             <Version>30.0.0</Version>
             <Comment>
 There are some highlights of current release. "Load user font" button at the Tune - Interface page. Yes, TEA can load fonts those are not installed system-wide. Read the Manual for the details.
