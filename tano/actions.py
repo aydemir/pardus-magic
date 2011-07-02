@@ -15,7 +15,7 @@ def setup():
 			  -DCMAKE_BUILD_TYPE=Release \
 			  -DCMAKE_CXX_FLAGS_RELEASE:STRING='-DNDEBUG' \
 			  -DCMAKE_C_FLAGS_RELEASE:STRING='-DNDEBUG' \
-                   -DEDITOR_WITH_VLCQT=ON", sourceDir="..")
+                          -DEDITOR_WITH_VLCQT=ON", sourceDir="..")
 
 def build():
     shelltools.cd("build")
