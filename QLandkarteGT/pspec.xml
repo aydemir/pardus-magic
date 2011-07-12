@@ -19,7 +19,7 @@ the PC side frontend to QLandkarte M, a moving map application for mobile
 devices. And it fills the gap Garmin leaves in refusing to support Linux.
 QLandkarte GT is the proof that writing portable applications for Unix,
 Windows and OSX is feasible with a minimum of overhead. No excuses!</Description>
-	<Archive sha1sum="31129d1f3cc9ba5003a980d6d341301e298b86b7" type="targz">mirrors://sourceforge/qlandkartegt/qlandkartegt-1.2.0.tar.gz</Archive>
+	<Archive sha1sum="978e8edd0469900fbeedf003ba384fcf" type="targz">mirrors://sourceforge/qlandkartegt/qlandkartegt-1.2.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>proj-devel</Dependency>
@@ -45,6 +45,54 @@ Windows and OSX is feasible with a minimum of overhead. No excuses!</Description
         </Files>
     </Package>
     <History>
+      <Update release="3">
+            <Date>2011-07-13</Date>
+	    <Version>1.2.2</Version>
+<Comment>
+--- 2011.07.11 ---
+
+Request #297:
+Add import/export for OZI data.
+
+Request #298:
+Add track profiles to diary
+
+Request #299:
+Add import of WBT201 data
+
+Bug #300:
+Diary: comments do not match their items
+
+Request #301:
+Add option for southern hemisphere in projection wizzard
+
+Request #302:
+Enhance coordinate / pixel query on canvas
+
+Request #303:
+Iterate over reference points with n and b key for finetunig
+
+Request #304:
+Add overview levels to reference process
+
+Request #305:
+Add on-the-fly quadratic zoom option to qmap
+
+Request #306:
+Add cachename to geocaches on the map
+
+Request #307:
+Add selection of multiple waypoints via checkboxes
+
+Request #308:
+Enhance delete, icon and proximity funtions for new waypoint selection
+
+Request #309:
+Show track point under cursor in profile preview and vice versa
+</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-06-16</Date>
 	    <Version>1.2.0</Version>
