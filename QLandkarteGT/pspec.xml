@@ -19,7 +19,7 @@ the PC side frontend to QLandkarte M, a moving map application for mobile
 devices. And it fills the gap Garmin leaves in refusing to support Linux.
 QLandkarte GT is the proof that writing portable applications for Unix,
 Windows and OSX is feasible with a minimum of overhead. No excuses!</Description>
-	<Archive sha1sum="978e8edd0469900fbeedf003ba384fcf" type="targz">mirrors://sourceforge/qlandkartegt/qlandkartegt-1.2.2.tar.gz</Archive>
+	<Archive sha1sum="9f546f2d9ee452b318be15f311133aa8c2e987a5" type="targz">mirrors://sourceforge/qlandkartegt/qlandkartegt-1.2.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>proj-devel</Dependency>
