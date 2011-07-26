@@ -16,7 +16,7 @@
         <Description>Kamerka is an Qt4 app using KDE4 libraries. It uses Video4Linux to get image from
 webcam and is able to save photos. Interface is based on QML and uses it's possibilities
 to show easy to use animated UI.</Description>
-        <Archive sha1sum="ddd0468be22a28907aac91fd3594ba5a599655d7" type="targz">http://dosowisko.net/kamerka/downloads/kamerka-0.8.tar.gz</Archive>
+        <Archive sha1sum="e76a2e72e0e969f720ea47d75c109d07776758ff" type="targz">http://dosowisko.net/kamerka/downloads/kamerka-0.8.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
@@ -39,6 +39,17 @@ to show easy to use animated UI.</Description>
         </Files>
     </Package>
     <History>
+        <Update release="3">
+	    <Date>2011-07-28</Date>
+	    <Version>-0.8.1</Version>
+	    <Comment>
+		  * fixed installation of kcfgc file instead of kcfg
+		  * fixed instructions in INSTALL file
+		  * german translation from Frank Schäfer
+	    </Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+	</Update>
         <Update release="2">
 	    <Date>2011-07-19</Date>
             <Version>0.8</Version>
