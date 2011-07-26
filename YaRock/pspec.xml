@@ -27,7 +27,7 @@ linux platform. Features include:
 * Play radio Stream (icecast, shoutcast, user stream files)
 * Download missing album cover art from Last.fm
 * Clean and simple user interface  </Description>
-        <Archive sha1sum="1a2ab80379876eb83bc682b5e85a8772b76ae924" type="targz">http://opendesktop.org/CONTENT/content-files/129372-Yarock_0.0.49_source.tar.gz</Archive>
+        <Archive sha1sum="cbc7bf1fe4ba3dec32ee712cb152faa9d8469c3e" type="targz">http://pakete.pardususer.de/source-files/Yarock_0.0.51_source.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>phonon-devel</Dependency>
@@ -49,6 +49,13 @@ linux platform. Features include:
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2011-07-26</Date>
+	    <Version>0.0.51</Version>
+            <Comment>Version bump</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-24</Date>
 	    <Version>0.0.49</Version>
