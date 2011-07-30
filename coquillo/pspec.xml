@@ -22,7 +22,7 @@ Current features:
 - Process multiple files at once.
 
 </Description>
-        <Archive sha1sum="1fdeefff95745a80ca7fad37d007b710027b0394" type="targz">http://cs.joensuu.fi/~sjuvonen/coquillo/1.4/coquillo-1.4-src.tar.gz</Archive>
+        <Archive sha1sum="6623b0dae0e1533b4a05d1a1c023b44781ff39c4" type="targz">http://cs.joensuu.fi/~sjuvonen/coquillo/1.5/coquillo-1.5-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>taglib-devel</Dependency>
@@ -38,10 +38,16 @@ Current features:
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
-	    <!-- <Path fileType="header">/usr/include</Path>-->
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2011-07-30</Date>
+            <Version>1.5</Version>
+            <Comment>First release.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-06-07</Date>
             <Version>1.4</Version>
