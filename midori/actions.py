@@ -18,14 +18,12 @@ def setup():
     shelltools.system("./waf configure \
                        --prefix=/usr \
                        --enable-nls \
-                       --enable-vala \
                        --enable-libidn \
                        --update-po \
                        --enable-docs \
                        --enable-apidocs  \
                        --enable-unique \
                        --enable-libidn \
-                       --enable-vala \
                        --enable-libnotify \
                        --enable-addons \
                        --disable-hildon")
