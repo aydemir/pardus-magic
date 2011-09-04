@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libctemplate</Name>
+        <Homepage>http://code.google.com/p/google-ctemplate/</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+	<PartOf>programming.misc</PartOf>
+        <Summary>CTemplate is a simple but powerful template language for C++.</Summary>
+        <Description>It emphasizes separating logic from presentation: it is impossible to embed application logic in this template language.</Description>
+	<Archive sha1sum="7fe974dfe90d35748564fa577f2c8be4b46f9663" type="targz">http://google-ctemplate.googlecode.com/files/ctemplate-0.99.tar.gz</Archive>
+        <BuildDependencies>
+	  <!-- <Dependency>glibc</Dependency> -->
+	</BuildDependencies>
+</Source>
+
+    <Package>
+        <Name>libctemplate</Name>
+        <RuntimeDependencies>
+	  <!--    <Dependency>glibc</Dependency> -->
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="binary">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libctemplate-devel</Name>
+	<Summary>Development files for libctemplate</Summary>
+        <RuntimeDependencies>
+	    <Dependency release="current">libctemplate</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-21</Date>
+            <Version>0.99</Version>
+            <Comment>First release</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
