@@ -18,7 +18,6 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qt-webkit</Dependency>
-            <Dependency>qt-webkit-devel</Dependency>
             <Dependency>openssl-devel</Dependency>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>minizip-devel</Dependency>
@@ -53,18 +52,21 @@
         <RuntimeDependencies>
 	    <Dependency release="current">vacuum-im</Dependency>
         </RuntimeDependencies>
+	<Conflicts>
+	    <Package>vacuum-im-unstable-devel</Package>
+	</Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
     <History>
-      	<Update release="32">
+      	<Update release="33">
             <Date>2011-08-24</Date>
             <Version>1.1.1</Version>
             <Comment>Fixed bug with handling stanzas from Google XMPP servers
-XML parser did not correctly handle the elements with not declared prefixes, which caused to the breaking the connection
-Fixed bug in Digest-MD5 authorization for which was not possible to log on some servers
-NOTICE: Look for a latest (svn) vacuum-im in package vacuum-im-unstabe</Comment>
+                     XML parser did not correctly handle the elements with not declared prefixes, which caused to the breaking the connection
+                     Fixed bug in Digest-MD5 authorization for which was not possible to log on some servers
+                     NOTICE: Look for a latest (svn) vacuum-im in package vacuum-im-unstabe</Comment>
             <Name>Alexey Ivanov</Name>
             <Email>alexey.ivanes@gmail.com</Email>
         </Update>

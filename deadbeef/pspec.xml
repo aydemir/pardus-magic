@@ -80,7 +80,7 @@
 
     <History>
         <Update release="3">
-            <Date>2011-05-17</Date>
+            <Date>2011-05-25</Date>
                 <Version>0.5.1</Version>
                 <Comment>
     fixed crash bug after deleting playlists

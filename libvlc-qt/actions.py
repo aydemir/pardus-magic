@@ -6,8 +6,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="ntadej-vlc-qt-43a5179"
-
 def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")

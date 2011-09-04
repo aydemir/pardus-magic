@@ -32,9 +32,8 @@
 
     <Package>
         <Name>liblinebreak-devel</Name>
-	<Summary>Development files for liblinebreak</Summary>
         <RuntimeDependencies>
-	    <Dependency release="current">liblinebreak</Dependency>
+	    <Dependency>liblinebreak</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

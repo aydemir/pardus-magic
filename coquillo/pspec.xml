@@ -45,13 +45,13 @@ Current features:
             <Date>2011-08-13</Date>
             <Version>1.6</Version>
             <Comment>- Fixed encoding setting being corrupted on startup.
-- Hopefully fixed encoding problems with special (eg. Cyrillic) characters.
-- Ogg Vorbis tags now use the official format for cover art.
-...Retained read only support for legacy ("EasyTag") covers.
+                     - Hopefully fixed encoding problems with special (eg. Cyrillic) characters.
+                     - Ogg Vorbis tags now use the official format for cover art.
+                     ...Retained read only support for legacy ("EasyTag") covers.
 
-- Remember to enable "convert legacy cover art" from the settings!
-...Disabled by default to not cause unpleasant surprises (legacy MP3 players or so?).
-...Will cause EasyTag (and other older apps) to not see the covers!</Comment>
+                     - Remember to enable "convert legacy cover art" from the settings!
+                     ...Disabled by default to not cause unpleasant surprises (legacy MP3 players or so?).
+                     ...Will cause EasyTag (and other older apps) to not see the covers!</Comment>
             <Name>Alexey Ivanov</Name>
             <Email>alexey.ivanes@gmail.com</Email>
         </Update>
@@ -59,8 +59,8 @@ Current features:
             <Date>2011-07-30</Date>
             <Version>1.5</Version>
             <Comment>- Fixed applying CDDB results on tracks.
-- Added inline editing of CDDB track listings.
-- Revised some code.</Comment>
+                     - Added inline editing of CDDB track listings.
+                     - Revised some code.</Comment>
             <Name>Alexey Ivanov</Name>
             <Email>alexey.ivanes@gmail.com</Email>
         </Update>

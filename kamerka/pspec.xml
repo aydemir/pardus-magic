@@ -54,24 +54,24 @@ to show easy to use animated UI.</Description>
 	    <Date>2011-07-19</Date>
             <Version>0.8</Version>
             <Comment>
-* graphical configuration
-* XDG Pictures folder is now used by default to store photos
-* photo folder is now configurable
-* options to turn on/off sounds and notifications
-* better error handling
-* reworked video thread - it's now much less ugly :)
-* creating photo directory when trying to open it, instead of showing big ugly error
-* xdg-open utility used instead of kde-open
-* moar pretty, but still not disturbing animations!
+		  * graphical configuration
+		  * XDG Pictures folder is now used by default to store photos
+		  * photo folder is now configurable
+		  * options to turn on/off sounds and notifications
+		  * better error handling
+		  * reworked video thread - it's now much less ugly :)
+		  * creating photo directory when trying to open it, instead of showing big ugly error
+		  * xdg-open utility used instead of kde-open
+		  * moar pretty, but still not disturbing animations!
 
-* Kamerka depends now on Phonon from KDE, not Qt (fixes build errors on systems without qt-phonon)
-* libv4lconvert is now correctly found on 64 bit systems
-* fix for Qt 4.7.0 ("import QtQuick 1.0" appeared first in 4.7.1)
-* some license issues fixed
+		  * Kamerka depends now on Phonon from KDE, not Qt (fixes build errors on systems without qt-phonon)
+		  * libv4lconvert is now correctly found on 64 bit systems
+		  * fix for Qt 4.7.0 ("import QtQuick 1.0" appeared first in 4.7.1)
+		  * some license issues fixed
 
-* czech translation from Pavel Fric
-* serbian translation from Mladen Pejaković
-* spanish translation from Daniel Halens
+		  * czech translation from Pavel Fric
+		  * serbian translation from Mladen Pejaković
+		  * spanish translation from Daniel Halens
 	     </Comment>
             <Name>Alexey Ivanov</Name>
             <Email>alexey.ivanes@gmail.com</Email>

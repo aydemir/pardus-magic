@@ -17,7 +17,7 @@
 source code is available to public, anyone is welcome to research
 how the library works, participate in its development, freely distribute
 the library and spread the word!</Description>
-        <Archive sha1sum="96cb5321219a194fbba7a4303cfd75aea515135d" type="targz">https://download.github.com/ntadej-vlc-qt-0.5.1-0-g43a5179.tar.gz</Archive>
+        <Archive sha1sum="6d94594f39e3ae5d47e0f6cb90efc3b3ba71ead0" type="targz">http://pakete.pardususer.de/source-files/vlc-qt-0.5.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>vlc-devel</Dependency>

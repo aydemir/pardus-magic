@@ -10,33 +10,32 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
-	<PartOf>programming</PartOf>
+        <PartOf>programming</PartOf>
         <Summary>Catcodec decodes and encodes sample catalogues for OpenTTD.</Summary>
-        <Description>These sample catalogues are not much more than some meta-data (description and file name)
-and raw PCM data.</Description>
-	<Archive sha1sum="484ceff3331be936d933843cb9aa58f0279dfc51" type="targz">http://binaries.openttd.org/extra/catcodec/1.0.3/catcodec-1.0.3-source.tar.gz</Archive>
-        <!-- <BuildDependencies>
-	  <Dependency></Dependency> ONLY GCC-C++
-	</BuildDependencies> -->
-</Source>
+        <Description>These sample catalogues are not much more than some meta-data (description and file name)and raw PCM data.</Description>
+        <Archive sha1sum="4769aa852c9af6aa72ec17b0982911cb7a857334" type="targz">http://binaries.openttd.org/extra/catcodec/1.0.4/catcodec-1.0.4-source.tar.gz</Archive>
+    </Source>
 
     <Package>
         <Name>catcodec</Name>
-        <!-- <RuntimeDependencies>
-	  <Dependency></Dependency>
-	</RuntimeDependencies> -->
         <Files>
             <Path fileType="binary">/usr/bin</Path>
-	    <Path fileType="doc">/usr/share/man</Path>
-	    <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
-
     <History>
+        <Update release="2">
+            <Date>2011-08-14</Date>
+            <Version>1.0.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>marcin bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-23</Date>
-	    <Version>1.0.3</Version>
+            <Version>1.0.3</Version>
             <Comment>First release</Comment>
             <Name>Alexey Ivanov</Name>
             <Email>alexey.ivanes@gmail.com</Email>
