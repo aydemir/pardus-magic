@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>DeaDBeeF</Name>
-        <Summary xml:lang="tr">Gnu/Linux için alternatif bir müzik çalıcı</Summary>
-        <Description xml:lang="tr">Bir çok müzik formatını çalabilen kullanışlı ve sade bir medya oynatıcı</Description>
-    </Source>
-</PISI>
