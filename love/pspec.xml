@@ -43,8 +43,14 @@ Developed with cross-platform implementation in mind, it utilizes the latest ope
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
+	<AdditionalFiles>
+            <AdditionalFile target="/usr/share/icons/hicolor/scalable/apps/love.svg" permission="0644" owner="root">app.svg</AdditionalFile>
+	    <AdditionalFile target="/usr/share/icons/hicolor/scalable/mimetypes/application-x-love-game.svg" permission="0644" owner="root">game.svg</AdditionalFile>
+	    <AdditionalFile target="/usr/share/applications/love.desktop" permission="0644" owner="root">love.desktop</AdditionalFile>
+	    <AdditionalFile target="/usr/share/mime/packages/love.xml" permission="0644" owner="root">love.xml</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="1">

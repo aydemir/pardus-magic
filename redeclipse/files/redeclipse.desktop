@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Redeclipse
+GenericName=Single and multiplayer FPS
+Exec=redeclipse
+Icon=/usr/share/pixmaps/redeclipse.png
+Type=Application
+Comment=Single and multiplayer FPS
+Categories=Application;Game;ActionGame;
+

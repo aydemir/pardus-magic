@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>redeclipse</Name>
+        <Homepage>http://www.redeclipse.net/</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <Icon>redeclipse</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>game.fps</PartOf>
+        <Summary>A single-player and multi-player first-person ego-shooter, built as a total conversion of Cube Engine 2</Summary>
+        <Description>A single-player and multi-player first-person ego-shooter, built as a total conversion of Cube Engine 2, which lends itself toward a balanced gameplay, completely at the control of map makers, while maintaining a general theme of agility in a variety of environments.</Description>
+        <Archive sha1sum="7e0722a58645177dcd9694a1a06c2fadf04666b9" type="tarbz2">mirrors://sourceforge/redeclipse/redeclipse_1.0_linux.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>redeclipse</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>sdl-sound</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>redeclipse-data</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/share/redeclipse/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/redeclipse.desktop" permission="0644" owner="root">redeclipse.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/bin/redeclipse" permission="0755" owner="root">redeclipse</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/redeclipse.png" permission="0755" owner="root">redeclipse.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <Package>
+        <Name>redeclipse-data</Name>
+        <Summary>Data resources for redeclipse. Such as maps, textures, models, sounds.</Summary>
+        <!-- <RuntimeDependencies>
+            <Dependency>redeclipse</Dependency>
+        </RuntimeDependencies> -->
+        <Files>
+            <Path fileType="data">/usr/share/redeclipse/data</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2011-03-25</Date>
+            <Version>1.0</Version>
+            <Comment>First release.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
