@@ -13,12 +13,11 @@
         <Summary>Basically it's a little like tetris except with a twist.</Summary>
         <Description>Not Tetris 2 is the spiritual successor of the classic Tetris mixed with physics. The result is a fun spinoff in which blocks are no longer bound to the usual grid. Blocks can be rotated and placed at any angle, resulting in a complete mess if not careful. And with the newest cutting edge technology, Not tetris 2 allows line clears when the lines are sufficiently filled. The old mode is still available for play and is now called Stack.</Description>
         <Archive sha1sum="83a4196a3847595cc6e556515b52e82812342555" type="zip">http://pakete.pardususer.de/source-files/nottetris2-linux.zip</Archive>
-        <BuildDependencies/>
     </Source>
     <Package>
         <Name>nottetris2</Name>
         <RuntimeDependencies>
-            <Dependencies>love</Dependencies>
+            <Dependency>love</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

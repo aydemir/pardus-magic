@@ -15,31 +15,31 @@
 Developed with cross-platform implementation in mind, it utilizes the latest open source libraries to deliver a similar game experience, independent of operating system. By relying on the Lua scripting language for game-specific programming, it allows even the novice game creator to quickly and efficiently develop an idea into a fully working game. </Description>
         <Archive sha1sum="876f527fc6908a6dd462080aa599ffa1ad47afa5" type="targz">http://cdn.bitbucket.org/rude/love/downloads/love-0.7.2-linux-src.tar.gz</Archive>
         <BuildDependencies>
-            <Dependencies>mesa-devel</Dependencies>
-            <Dependencies>DevIL-devel</Dependencies>
-            <Dependencies>lua-devel</Dependencies>
-            <Dependencies>libsdl-devel</Dependencies>
-            <Dependencies>physfs-devel</Dependencies>
-	    <Dependencies>openal-devel</Dependencies>
-	    <Dependencies>mpg123-devel</Dependencies>
-	    <Dependencies>libvorbis-devel</Dependencies>
-	    <Dependencies>libmodplug-devel</Dependencies>
-	    <Dependencies>freetype-devel</Dependencies>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>DevIL-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>physfs-devel</Dependency>
+	    <Dependency>openal-devel</Dependency>
+	    <Dependency>mpg123-devel</Dependency>
+	    <Dependency>libvorbis-devel</Dependency>
+	    <Dependency>libmodplug-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>love</Name>
         <RuntimeDependencies>
-            <Dependencies>mesa</Dependencies>
-            <Dependencies>DevIL</Dependencies>
-            <Dependencies>lua</Dependencies>
-            <Dependencies>libsdl</Dependencies>
-	    <Dependencies>physfs</Dependencies>
-	    <Dependencies>openal</Dependencies>
-	    <Dependencies>mpg123</Dependencies>
-	    <Dependencies>libvorbis</Dependencies>
-	    <Dependencies>libmodplug</Dependencies>
-	    <Dependencies>freetype</Dependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>DevIL</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>libsdl</Dependency>
+	    <Dependency>physfs</Dependency>
+	    <Dependency>openal</Dependency>
+	    <Dependency>mpg123</Dependency>
+	    <Dependency>libvorbis</Dependency>
+	    <Dependency>libmodplug</Dependency>
+	    <Dependency>freetype</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
