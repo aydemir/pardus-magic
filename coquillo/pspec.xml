@@ -41,7 +41,7 @@ Current features:
         </Files>
     </Package>
     <History>
-	<Update release="3">
+	<Update release="4">
             <Date>2011-09-08</Date>
             <Version>1.7</Version>
             <Comment>	- Enabled reordering and enabling/disabling of columns in the main view.
