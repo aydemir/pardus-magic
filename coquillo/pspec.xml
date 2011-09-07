@@ -22,7 +22,7 @@ Current features:
 - Process multiple files at once.
 
 </Description>
-        <Archive sha1sum="52ab99df53d706e7756a885f9d2d82c279141ebc" type="targz">http://cs.joensuu.fi/~sjuvonen/coquillo/1.6/coquillo-1.6-src.tar.gz</Archive>
+        <Archive sha1sum="b2785e78e1d93cf15ae9adc27e4989742fc4a2a4" type="targz">http://cs.joensuu.fi/~sjuvonen/coquillo/1.7/coquillo-1.7-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>taglib-devel</Dependency>
@@ -41,6 +41,17 @@ Current features:
         </Files>
     </Package>
     <History>
+	<Update release="3">
+            <Date>2011-09-08</Date>
+            <Version>1.7</Version>
+            <Comment>	- Enabled reordering and enabling/disabling of columns in the main view.
+			- Text fields now scroll to the begin when changing editable track.
+			- Fixed a regression with renaming files and directories.
+			- Field processor dialog now remembers its size.
+			- Fixed "dimming background for subdirectories" sometimes being inaccurate.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-08-13</Date>
             <Version>1.6</Version>
