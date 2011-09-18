@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libjreen</Name>
+        <Homepage>https://github.com/euroelessar/jreen</Homepage>
+        <Packager>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+	<PartOf>network.chat</PartOf>
+        <Summary>Qt XMPP library</Summary>
+        <Description>Library for xmpp is positioned as an asynchronous replacement gloox</Description>
+        <Archive sha1sum="52c69336f0f78b97d8dadb21b93db63e8262487f" type="targz">http://pakete.pardususer.de/source-files/euroelessar-jreen-a2487c4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+	    <Dependency>libidn-devel</Dependency>
+            <Dependency>qca2-devel</Dependency>
+            <Dependency>zlib-devel</Dependency>
+	    <Dependency>doxygen</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libjreen</Name>
+	<RuntimeDependencies>
+            <Dependency>qt</Dependency>
+	    <Dependency>libidn</Dependency>
+            <Dependency>qca2</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/</Path>
+	    <Path fileType="doc">/usr/share/doc/</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libjreen-devel</Name>
+        <Description>Development files for libjreen</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">libjreen</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/jreen/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-09-12</Date>
+            <Version>0_20110903</Version>
+            <Comment>First release</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

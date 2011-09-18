@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 #WorkDir="aspell6-ru-%s-0" % (get.srcVERSION())
 
 def setup():
-    autotools.rawConfigure()
+    autotools.rawConfigure() 
 
 def build():
     autotools.make()

@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A handy Screenshot tool sitting in the systray</Summary>
         <Description>With left clicking on the icon you can capture a screen region and draw arrows, boxes and textboxes on it.</Description>
-        <Archive sha1sum="71b2ebe26bee158f8e9a7a16e0b9466314c8658d" type="targz">http://kde-apps.org/CONTENT/content-files/139302-kaption-0.0.9.tar.gz</Archive>
+        <Archive sha1sum="54cd04c3dbe1acbee477f1bcd052ba07b20ac301" type="tarbz2">http://kaption.googlecode.com/files/kaption-0.1.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.6.2">qt-devel</Dependency>
             <Dependency versionFrom="4.4.4">kdelibs-devel</Dependency>
@@ -36,6 +36,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="5">
+            <Date>2011-09-15</Date>
+            <Version>0.1.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2011-04-24</Date>
             <Version>0.0.9</Version>

@@ -6,7 +6,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="soundkonverter-1.0.0"
+WorkDir="soundkonverter-"+get.srcVERSION()
 
 def setup():
     shelltools.makedirs("build")
