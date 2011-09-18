@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>vacuum-im</Name>
+        <Summary xml:lang="ru">Мультипротокольный клиент сетей IM написанный на QT</Summary>
+        <Description xml:lang="ru">qutIM — кроссплатформенный клиент мгновенного обмена сообщениями с открытым исходным кодом, распространяемый по лицензии GNU GPL.</Description>
+    </Source>
+</PISI>
