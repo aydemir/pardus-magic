@@ -14,4 +14,5 @@ def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("INSTALL_DIR=%s" % get.installDIR() + "/usr/share/openttd/data")
+    autotools.rawInstall("INSTALL_DIR=%s/usr/share/openttd/data/opengfx" % get.installDIR())
+    pisitools.dodoc("docs/*.txt")
