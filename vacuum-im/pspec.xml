@@ -21,7 +21,7 @@
             <Dependency>openssl-devel</Dependency>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>minizip-devel</Dependency>
-	    <Dependency>libidn-devel</Dependency>
+	    	<Dependency>libidn-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
@@ -32,7 +32,7 @@
             <Dependency>openssl</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>minizip</Dependency>
-	    <Dependency>libidn</Dependency>
+	    	<Dependency>libidn</Dependency>
         </RuntimeDependencies>
 	<Replaces>
 	    <Package>vacuum</Package>
@@ -48,7 +48,7 @@
     </Package>
     <Package>
         <Name>vacuum-im-devel</Name>
-	<Summary>Development files for vacuum im</Summary>
+		<Summary>Development files for vacuum im</Summary>
         <RuntimeDependencies>
 	    <Dependency release="current">vacuum-im</Dependency>
         </RuntimeDependencies>

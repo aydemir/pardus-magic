@@ -4,17 +4,18 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
+from pisi.actionsapi import qt4
 from pisi.actionsapi import get
 
 
 WorkDir="tea-"+get.srcVERSION()
 
 def setup():
-    shelltools.system("qmake src.pro PREFIX=/usr/bin")
-
+    qt4.configure(projectfile="src.pro", parameters="", installPrefix="/usr/bin")
+    
 def build():
-    autotools.make()
+    qt4.make()
 
 def install():
-    pisitools.dobin("bin/tea")
+    qt4.install()
     pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "NEWS-RU", "TODO")

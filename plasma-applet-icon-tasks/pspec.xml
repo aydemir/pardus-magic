@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.addon</PartOf>
         <Summary>This is a modified version of the KDE taskbar, and taskmanager library.</Summary>
         <Description>The main change is to preserve the position of tasks and launchers. e.g. when a launcher is activated, the resultant task item appears in the same place in the taskbar as the launcher did.</Description>
-        <Archive sha1sum="225169a78077d8eb4162dfd6f1b821f0715ae0e0" type="tarbz2">http://kde-look.org/CONTENT/content-files/144808-plasma-icontasks-0.1.1.tar.bz2</Archive>
+        <Archive sha1sum="67b871700a3b5aa128a93adb9e9b3401990397b2" type="tarbz2">http://kde-look.org/CONTENT/content-files/144808-plasma-icontasks-0.2.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>kdebase-workspace-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
@@ -31,6 +31,24 @@
         </Files>
     </Package>
     <History>
+        <Update release="3">
+            <Date>2011-09-30</Date>
+            <Version>0.2.0</Version>
+            <Comment>
+            1. For tooltips of task/group items, show [window icon][text][close icon] above each preview - instead of large icon and text below. Allow windows to be closed via close icon.
+ 			2. Add option to set task spacing - 0(default) to 50 pixels.
+ 			3. Add option to control if task frames should be rotated in vertical panels.
+ 			4. Add option to specify icon scale - 50% to 100%
+ 			5. Add option to control when tooltips are displayed; never, instant, after delay.
+ 			6. Remove 'Force rows' option.
+ 			7. Fix issue where if launcher was activated on one activity, when a new activity was activated the launcher would not appear.
+ 			8. Detect whan a window changes its window class/name. This happens with LibreOffice.
+			9. Use screen size to determine how man windows can appear in tooltip - use multiple rows if necessary.
+			10. Each time a task is associated/disassociated with a launcher, recehck whether it should be shown. Helps when the same app is started/closed on multiple	desktops/activities.
+            </Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-08-30</Date>
             <Version>0.1.1</Version>

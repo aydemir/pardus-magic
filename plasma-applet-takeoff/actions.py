@@ -6,8 +6,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="plasma-icontasks-%s" % (get.srcVERSION())
-
 def setup():
     kde4.configure()
 
@@ -16,5 +14,5 @@ def build():
 
 def install():
     kde4.install()
-    pisitools.dodoc("COPYING", "README", "TODO")
+    pisitools.dodoc("COPYRIGHT", "CHANGELOG", "COPYING", "README")
 
