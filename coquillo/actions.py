@@ -17,4 +17,4 @@ def build():
 def install():
     qt4.install()
     
-    pisitools.dodoc("BUGS", "CHANGES", "INSTALL", "LICENSE", "README", "TODO")
+    pisitools.dodoc("CHANGES", "INSTALL", "LICENSE", "README")
