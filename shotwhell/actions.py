@@ -6,14 +6,18 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import libtools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--prefix=/usr --disable-schemas-install \
+
+# HACK: Remove fatal-warnings to succeed build with vala 0.13.
+    shelltools.system("sed -i \"s:--fatal-warnings ::g\" Makefile plugins/Makefile.plugin.mk")
+
+    autotools.configure("--prefix=/usr \
+			 --disable-schemas-compile \
 			 --disable-desktop-update \
-			 --disable-icon-update \
-			 --enable-build-for-glade")
+			 --disable-icon-update")
 
 def build(): 
     autotools.make() 

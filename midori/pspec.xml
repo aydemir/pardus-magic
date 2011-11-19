@@ -43,7 +43,6 @@
             <Dependency>libunique</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>vala</Dependency>
             <Dependency>webkit-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
