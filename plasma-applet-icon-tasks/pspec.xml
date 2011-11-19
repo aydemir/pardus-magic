@@ -13,10 +13,11 @@
         <PartOf>desktop.kde.addon</PartOf>
         <Summary>This is a modified version of the KDE taskbar, and taskmanager library.</Summary>
         <Description>The main change is to preserve the position of tasks and launchers. e.g. when a launcher is activated, the resultant task item appears in the same place in the taskbar as the launcher did.</Description>
-        <Archive sha1sum="67b871700a3b5aa128a93adb9e9b3401990397b2" type="tarbz2">http://kde-look.org/CONTENT/content-files/144808-plasma-icontasks-0.2.0.tar.bz2</Archive>
+        <Archive sha1sum="32c33e000437ecd9709487af8b763a92ec41afc2" type="tarbz2">http://kde-apps.org/CONTENT/content-files/144808-plasma-icontasks-0.8.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>kdebase-workspace-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libdbusmenu-qt-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
@@ -24,6 +25,7 @@
         <RuntimeDependencies>
             <Dependency>kdebase-workspace</Dependency>
             <Dependency>kdelibs</Dependency>
+            <Dependency>libdbusmenu-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +33,46 @@
         </Files>
     </Package>
     <History>
+        <Update release="4">
+            <Date>2011-10-26</Date>
+            <Version>0.8.1</Version>
+            <Comment>
+                0.8.1
+                =====
+                1. Only show standard items in right click menu of tooltip.
+                2. Use italic text for system-wide dock-manager plugins.
+                3. Delete item delegate of dock plugins, to stop KWidgetItemDelegateEventListener logging so many warnings. This should not be required, but it keeps the library quiet...
+                4. Hungarian translation - thanks to Kristóf Kiszel
+                5. Turkish translation - thanks to Yavuz Ünver
+                
+                0.8.0
+                =====
+                1. Better, less hacky, way of placing newly created group where first task of group was. (And placing of task after group is closed).
+                2. Vary size of drop indicator (16 to 32pixels) depending upon task item sizes.
+                3. Italian translation - thanks to Giovanni Tedaldi
+                4. Brazilian Portuguese translation - thanks to Luis Fernando Planella Gonzalez
+                5. When drawing spinner for non-launcher task, draw task background and icon with 50% opacity.
+                6. Reduce space taken by tasks in non-composited tooltips.
+                7. Adjust size of popup menu (up to 512 pixels) based upon task's text.
+                8. Fix duplicate items created when plasma-desktop is restarted and taskbar contains a task group.
+                9. Restrict hue value of background colours to be between 196 and 224, likwise restrict saturation to be between 128 and 196. Improves contrast with icon.
+                10. Move progressbar to the bottom of the icon - to give more space for indicators.
+                11. Don't fade minimized tasks, fade the indicator instead.
+                12. Allow larger indicators for larger tasks.
+                13. If we have more the 1 recent document, place in a 'Recent Documents' menu.
+                14. Parse ~/.recently-used.xbel and ~/.local/share/recently-used.xbel to obtain Gtk recent documents.
+                15. Pase ~/.recently-used for LibreOffice recent documents.
+                16. Only monitor the dbus service for DockManager helpers started by IconTasks.
+                17. Better icon positioning.
+                18. Clear DockManager and Unity menus when helper/application terminates.
+                19. Alter DockManager plugin config page; remove filter, use item delegate to improve look of items, move details into information button.
+                20. Add a 'Refresh' menu entry to main popup menu, to attempt to work-around ghost taskbar issues.
+                21. To help with Firefox unity plugin, when unity API is enabled set the DESKTOP_SESSION env var to ubuntu.
+                22. Draw progress fill at least 4pixels wide, so as to stop odd look at low progress.
+            </Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-09-30</Date>
             <Version>0.2.0</Version>

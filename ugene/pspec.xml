@@ -14,14 +14,14 @@
         <PartOf>science.biology</PartOf>
         <Summary>Integrated Bioinformatics Suite</Summary>
         <Description>UGENE is a free bioinformatics tool for DNA and protein sequence analysis</Description>
-        <Archive sha1sum="dd5cc276728c8cc3ab0b1e348673ddf98262b259" type="targz">http://ugene.unipro.ru/downloads/ugene-1.9.7.tar.gz</Archive>
+        <Archive sha1sum="ee36718369ecede1da2c246d818cd57c14f03a57" type="targz">http://ugene.unipro.ru/downloads/ugene-1.9.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
-	    	<Dependency>mesa-devel</Dependency>
+	    <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
         <Patches>
-        	<Patch level="0">libdir.patch</Patch>
+	    <Patch level="0">libdir.patch</Patch>
         </Patches>
     </Source>
     <Package>
@@ -29,7 +29,7 @@
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>qt-webkit</Dependency>
-			<Dependency>mesa</Dependency>
+	    <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -38,6 +38,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2011-11-19</Date>
+            <Version>1.9.8</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
       	<Update release="1">
             <Date>2011-09-25</Date>
             <Version>1.9.7</Version>

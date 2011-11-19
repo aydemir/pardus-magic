@@ -12,22 +12,11 @@
         <Icon>yarock</Icon>
         <IsA>app:gui</IsA>
         <PartOf>multimedia.sound</PartOf>
-        <Summary>Yarock is Qt4 Modern Music Player designed to provide an easy and pretty music
-collection browser based on cover art.</Summary>
-        <Description>Yarock is written in C++ using Qt and Phonon multimedia framework, only for
-linux platform. Features include:
-* Music collection database (SQLite 3)
-* Browse your local music collection (by artists, albums, genre)
-* Easy search and filter music collection
-* Manage favorites item (album, artist)
-* Play music directly from collection or playlist
-* Simple Playlist
-* Support mp3, Ogg Vorbis,flac music files
-* Support load/save playlist file (m3u, pls, xspf)
-* Play radio Stream (icecast, shoutcast, user stream files)
-* Download missing album cover art from Last.fm
-* Clean and simple user interface  </Description>
-        <Archive sha1sum="cbc7bf1fe4ba3dec32ee712cb152faa9d8469c3e" type="targz">http://pakete.pardususer.de/source-files/Yarock_0.0.51_source.tar.gz</Archive>
+        <Summary>Yarock is Qt4 Modern Music Player.</Summary>
+        <Description>Designed to provide an easy and pretty music
+collection browser based on cover art. Yarock is written in C++ using Qt and Phonon multimedia framework, only for
+linux platform.</Description>
+        <Archive sha1sum="81aa8eee8bdd0687eb6fd314db6361bf40f506b7" type="targz">http://launchpad.net/yarock/trunk/0.0.52/+download/Yarock_0.0.52_source.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>phonon-devel</Dependency>
@@ -45,10 +34,16 @@ linux platform. Features include:
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
-	    <!-- <Path fileType="header">/usr/include</Path>-->
         </Files>
     </Package>
     <History>
+	<Update release="3">
+            <Date>2011-11-19</Date>
+	    <Version>0.0.52</Version>
+            <Comment>Version bump</Comment>
+            <Name>Alexey Ivanov</Name>
+            <Email>alexey.ivanes@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-07-26</Date>
 	    <Version>0.0.51</Version>

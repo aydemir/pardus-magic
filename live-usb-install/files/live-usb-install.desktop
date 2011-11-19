@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LiveUSB Install
+GenericName=LiveUSB Install
+GenericName[ru]=LiveUSB Инсталятор
+Comment=Tool for creating Live USB drives
+Comment[ru]=Утилита для создания Live USB флешек
+Exec=xdg-su -c "python /usr/share/live-usb-install/live-usb-install.py"
+Icon=drive-removable-media-usb-pendrive
+Terminal=false
+Type=Application
+Categories=Application;System;
